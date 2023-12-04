@@ -1,10 +1,12 @@
 import sys, spacy, os,re
 import json
+import glob
 import datetime
 from collections import Counter
 from matplotlib import pyplot as plt
 import pandas as pd
 from nltk.corpus import stopwords
+
 
 def get_tagged_users(df):
     """get all @ in the messages"""
@@ -209,3 +211,8 @@ def process_msgs(msg):
     rply_list = from_msg_get_replies(msg)
 
     return msg_list, rply_list
+
+
+
+
+
